@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PlanController;
 
 /*
@@ -15,11 +16,10 @@ use App\Http\Controllers\PlanController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
+Route::post('/createSubscription', [PlanController::class, 'createSubscription'])->name('subscription.create');
 
-Route::get('/plans', [PlanController::class, 'index'])->name('plans.get');
+// Route::get('plan/{plan}', [PlanController::class, 'show'])->name('plan.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

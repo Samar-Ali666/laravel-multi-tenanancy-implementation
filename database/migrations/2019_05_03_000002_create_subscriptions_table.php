@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('tenant_id');
+            $table->string('tenant_id')->index();
+            // $table->foreignId('tenant_id');
             $table->string('name');
             $table->string('stripe_id')->unique();
             $table->string('stripe_status');

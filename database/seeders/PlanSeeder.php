@@ -19,21 +19,21 @@ class PlanSeeder extends Seeder
             [
                 'name' => 'Basic Plan',
                 'slug' => 'basic-plan',
-                'stripe_plan' => 'price_1MITpfGwqrC02TkepXHH3NmJ',
+                'stripe_plan' => 'price_1MLMhSGwqrC02TkeDbnEMcH8',
                 'price' => 10,
                 'description' => 'This is basic plan'
             ],
             [
                 'name' => 'Standard Plan',
                 'slug' => 'standard-plan',
-                'stripe_plan' => 'price_1MITqkGwqrC02TkeUbp27euZ',
+                'stripe_plan' => 'price_1MLMidGwqrC02TkeXFInImZn',
                 'price' => 20,
                 'description' => 'This is standard plan'
             ],
             [
                 'name' => 'Premiuim Plan',
                 'slug' => 'premium-plan',
-                'stripe_plan' => 'price_1MITruGwqrC02TkeOJssC6dQ',
+                'stripe_plan' => 'price_1MLMixGwqrC02TkeRQxYV40A',
                 'price' => 30,
                 'description' => 'This is premium plan'
             ],
